@@ -1,5 +1,5 @@
 body{
-    background-color: #F4F7FB;
+    background-color: #eed4f3;
     font-family: "Poppins";
 }
 
@@ -16,3 +16,16 @@ main{
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+
+.btn-primary{
+    background-color: #ad4dca;
+    color: #FFFF;
+    border-radius: 15px;
+    border-color: white;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+}
+
