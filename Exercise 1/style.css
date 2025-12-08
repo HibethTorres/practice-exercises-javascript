@@ -16,3 +16,14 @@ main{
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+#console-output {
+            background-color: #1e1e1e;
+            color: #00ff00; /* Verde terminal clásico */
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border-radius: 5px;
+            height: 20px;
+            width: 50%;
+            overflow-y: scroll;
+}

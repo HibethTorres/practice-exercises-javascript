@@ -14,9 +14,33 @@ At the end of the exercise, there should be 4 people in the array.
 
 */
 
-let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
+// 1. Guardamos la función original por si la necesitamos
+const originalLog = console.log;
+const outputDiv = document.getElementById('console-output');
 
-// 1. Print all people
+// 2. Sobreescribimos console.log
+console.log = function(...args) {
+    // Llamamos a la original para que sigas viéndolo en la consola real (F12)
+    originalLog.apply(console, args);
+
+    // Creamos un nuevo elemento de texto para el HTML
+    const message = args.map(arg => 
+        typeof arg === 'object' ? JSON.stringify(arg) : arg
+    ).join(' ');
+
+    const newLine = document.createElement('div');
+    newLine.textContent = `> ${message}`;
+    outputDiv.appendChild(newLine);
+};
+
+/**
+ * Code snippet to complete:
+ */
+
+let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
+console.log("Initial people array: "); 
+
+// 1. Command that prints out all of the people in the list.
 for (let i = 0; i < people.length; i++) {
   console.log(people[i]);
 }
@@ -37,14 +61,14 @@ people.unshift(luis);
 people.push("Hibeth");
 
 // 6. Loop and exit after "Maria"
-
+console.log("Iterating through people and breaking after Maria:");
 for (let i = 0; i < people.length; i++) {
   console.log(people[i]);
   if (people[i] === "Maria") {
     break;
   }
 }
-
+console.log("Exited the loop after Maria.");
 // 7. Index of "Maria"
 console.log("Index of Maria: " + people.indexOf("Maria"));
 

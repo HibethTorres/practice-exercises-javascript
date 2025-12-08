@@ -18,14 +18,12 @@ main{
 }
 
 
-.btn-primary{
-    background-color: #ad4dca;
-    color: #FFFF;
-    border-radius: 15px;
-    border-color: white;
-    height: 30px;
-    cursor: pointer;
-    font-size: 15px;
-    align-items: center;
+#console-output {
+            background-color: #1e1e1e;
+            color: #00ff00; /* Verde terminal clásico */
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border-radius: 5px;
+            height: 240px;
+            overflow-y: scroll;
 }
-
