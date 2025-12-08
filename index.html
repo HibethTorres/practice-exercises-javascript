@@ -12,19 +12,30 @@
 </head>
 <body>
     <h1 class="title1">Practice Exercises JavaScript</h1>
+    <p>Please select the exercise number</p>
     <header>
         <nav>
+            <!-- Added dropdown 
             <div class="input-group">
-            <label for="exercise-selection">Select the exercise number</label>
-            <select name="exercise" id="exercise">
-                <option href="./index.html">Exercise 1</option>
-                <option href="./Exercise%201/index.html">Exercise 2</option>
-                <option href="./Exercise%202/index.html">Exercise 3</option>
-                <option href="./Exercise%203/index.html">Exercise 4</option>
-                <option href="./Exercise%204/index.html">Exercise 5</option>
-                <option href="./Exercise%205/index.html">Exercise 6</option>
+            <label for="exerciseDropdown">Select the exercise number</label>
+            
+            <select id="exerciseDropdown">
+
+                <option value = "0">Home</option>
+                <option value = "1">Exercise 1</option>
+                <option value = "2">Exercise 2</option>
+                <option value = "3">Exercise 3</option>
+                <option value = "4">Exercise 4</option>
+                <option value = "5">Exercise 5</option>
+                <option value = "6">Exercise 6</option>
+
             </select>
             </div>
+            -->
+            <!-- Added button with onclick event 
+            <button class="btn-primary" id="fetch-btn" onclick="handleFetchClick()">Go!</button> 
+            -->
+
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./Exercise%201/index.html">Exercise 1</a></li>
@@ -34,11 +45,22 @@
                 <li><a href="./Exercise%205/index.html">Exercise 5</a></li>
                 <li><a href="./Exercise%206/index.html">Exercise 6</a></li>
             </ul>
+
         </nav>
     </header>
     <main>
         <!-- Contenido principal aquí -->
     </main>
     <p>By ib</p>
+    
+   <!-- Calling Scripts
+    <script src="script.js"></script>
+    <script src="Exercise 1/script.js"></script>
+    <script src="Exercise 2/script.js"></script>
+    <script src="Exercise 3/script.js"></script>
+    <script src="Exercise 4/script.js"></script>
+    <script src="Exercise 5/script.js"></script>
+    <script src="Exercise 6/script.js"></script>
+ -->
 </body>
 </html>
