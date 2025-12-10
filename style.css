@@ -17,10 +17,10 @@ main {
 
   h1{
     font-size: 30px;
-    color: #ec39c0;
+    color: #f7f0f5;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-shadow: 0 0 5px #f7f0f5;
+    text-shadow: 0 0 10px #fc06be;
 }
 
 /*Caja que contiene los botones*/
@@ -49,7 +49,7 @@ main {
     background: #fa292924;
     padding: 12px;
     border-radius: 10px;
-    color: #ec39c0;
+    color: #ee5eca;
     font-weight: 600;
     transition: 0.2s;
     border: 1px solid rgba(255, 255, 255, 0.2);
