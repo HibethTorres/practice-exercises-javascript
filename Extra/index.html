@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Música</title>
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <h1>Feliz cumpleaños profe Serch🌸!</h1>
-    <p>Espero que haya tenido un día maravilloso y su vida este llena de amor y bendiciones.
+<body style="background-image: url(&quot;../resources/sakura.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <header>
+        <nav class = "nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Exercise%201/index.html">Exercise 1</a></li>
+                <li><a href="../Exercise%202/index.html">Exercise 2</a></li>
+                <li><a href="../Exercise%203/index.html">Exercise 3</a></li>
+                <li><a href="../Exercise%204/index.html">Exercise 4</a></li>
+                <li><a href="../Exercise%205/index.html">Exercise 5</a></li>
+                <li><a href="../Exercise%206/index.html">Exercise 6</a></li>
+                <li><a href="../Extra/index.html" onclick="sessionStorage.setItem('audioPermitido', '1')">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class = "container">
+    <h1 class="title1">Feliz cumpleaños profe Serch🌸!</h1>
+    <p>Espero que haya tenido un día maravilloso y su vida esté llena de amor y bendiciones.
         <br>
         Gracias por ser un profesor tan increíble y dedicado.
         <br>
         Disfrute de esta canción especial para usted.
     </p>
-
+    </div>
+    </main>
+    
     <audio id="musica" src="../resources/audio.mp3" loop></audio>
 
     <script src="script.js"></script>

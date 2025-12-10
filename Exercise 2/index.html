@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: url(&quot;../resources/sakura.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-position: center center;">
     <header>
-        <nav>
+        <nav class = "nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../Exercise%201/index.html">Exercise 1</a></li>
@@ -20,9 +20,12 @@
                 <li><a href="../Exercise%204/index.html">Exercise 4</a></li>
                 <li><a href="../Exercise%205/index.html">Exercise 5</a></li>
                 <li><a href="../Exercise%206/index.html">Exercise 6</a></li>
+                <li><a href="../Extra/index.html" onclick="sessionStorage.setItem('audioPermitido', '1')">Extra</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+    <div class = "container">
     <h1 class="title1">Exercise #2</h1>
     <p>
     Write a function that:
@@ -39,9 +42,10 @@
     </p>
 
     <!-- Creating a container -->
-    <h2>JavaScript Console Output</h2>
+    <h2 class="title2">JavaScript Console Output</h2>
     <div id="console-output"></div>
-    
+    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
