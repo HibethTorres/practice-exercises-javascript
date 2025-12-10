@@ -1,27 +1,26 @@
 body{
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: "Poppins";
     background-color: #eed4f3;
     height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%; /* Asegura que el main ocupe toda la altura del body */
 }
-/*
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  }
-*/
+
   h1{
     font-size: 30px;
-    color: #f7f0f5;
+    color: #ec39c0;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-shadow: 0 0 5px #fc06be;
+    text-shadow: 0 0 5px #f7f0f5;
 }
 
 /*Caja que contiene los botones*/
@@ -50,7 +49,7 @@ main{
     background: #fa292924;
     padding: 12px;
     border-radius: 10px;
-    color: #ee5eca;
+    color: #ec39c0;
     font-weight: 600;
     transition: 0.2s;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -62,12 +61,12 @@ main{
     box-shadow: 0 0 20px #f58ddb;
 }
 
-#console-output {
-            background-color: #1e1e1e;
-            color: #00ff00; /* Verde terminal clásico */
-            font-family: 'Courier New', monospace;
-            padding: 20px;
-            border-radius: 5px;
-            height: 240px;
-            overflow-y: scroll;
+.footer {
+  text-align: center;
+  padding: .2rem 0;
+  margin-top: 0rem;
+  border-top: 3px solid #f279e8;
+  opacity: 0.8;
+  font-size: 0.9rem;
 }
+
